@@ -139,7 +139,7 @@ static const int kAlignmentBuffer = 5;
 }
 
 
-#pragma mark - Private Methods
+//#pragma mark - Private Methods
 
 - (void)setup {
     _lineHeight = 12;
