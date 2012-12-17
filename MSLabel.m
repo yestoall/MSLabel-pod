@@ -121,7 +121,7 @@ static const int kAlignmentBuffer = 5;
         [line drawAtPoint:CGPointMake(drawX, drawY) forWidth:self.frame.size.width withFont:self.font fontSize:self.font.pointSize lineBreakMode:UILineBreakModeClip baselineAdjustment:UIBaselineAdjustmentNone];
     }
     
-    [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, numLines*20)];
+    //[self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, numLines*20)];
 }
 
 
