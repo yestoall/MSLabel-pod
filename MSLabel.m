@@ -145,7 +145,7 @@ static const int kAlignmentBuffer = 5;
     _lineHeight = 12;
     self.minimumFontSize = 12;
     self.numberOfLines = 0;
-    self.lineBreakMode = UILineBreakModeCharacterWrap;
+    self.lineBreakMode = UILineBreakModeWordWrap;
     _verticalAlignment = MSLabelVerticalAlignmentTop;
 }
 
