@@ -120,6 +120,8 @@ static const int kAlignmentBuffer = 5;
         
         [line drawAtPoint:CGPointMake(drawX, drawY) forWidth:self.frame.size.width withFont:self.font fontSize:self.font.pointSize lineBreakMode:UILineBreakModeClip baselineAdjustment:UIBaselineAdjustmentNone];
     }
+    
+    [self setFrame:CGRectMake(self.frame.origin.x, self.frame.origin.y, self.frame.size.width, numLines*20)];
 }
 
 
@@ -142,7 +144,9 @@ static const int kAlignmentBuffer = 5;
 - (void)setup {
     _lineHeight = 12;
     self.minimumFontSize = 12;
-    _verticalAlignment = MSLabelVerticalAlignmentMiddle;
+    self.numberOfLines = 0;
+    self.lineBreakMode = UILineBreakModeCharacterWrap;
+    _verticalAlignment = MSLabelVerticalAlignmentTop;
 }
 
 - (NSArray *)stringsFromText:(NSString *)string {
